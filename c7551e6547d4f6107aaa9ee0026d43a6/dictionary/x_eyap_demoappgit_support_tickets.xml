@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d7e61a6947d4f6107aaa9ee0026d43c7" label="Support Tickets" max_length="40" name="x_eyap_demoappgit_support_tickets" type="collection">
+        <element label="Ticket Number" max_length="40" name="ticket_number" type="string"/>
+        <element label="Description" max_length="40" name="description" type="string"/>
+        <element label="Title" max_length="40" name="title" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Priority" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="Medium"/>
+                <element inactive_on_update="false" label="Low" sequence="2" value="Low"/>
+                <element inactive_on_update="false" label="High" sequence="0" value="High"/>
+            </choice>
+        </element>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Opened" sequence="0" value="Started"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="In Progress"/>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="Completed"/>
+            </choice>
+        </element>
+    </element>
+</database>
